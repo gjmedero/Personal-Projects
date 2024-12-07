@@ -2,8 +2,7 @@ import math as m
 
 def calculator(n: int, m_func: float):
     for i in range(1, n+1):
-        result = f"{i * m_func:.2f}"
-        print(result)
+        print(round(m_func, i))
 
 def nth_digit(n: int, s: str):
     if s == "pi":
@@ -13,7 +12,7 @@ def nth_digit(n: int, s: str):
     else:
         print("invalid input")
         
-print("This program calculates up to the nth digit of π and e")
+print("This program outputs π and e up to nth decimal places.")
 num, sym = input("Input the digit followed by your choice of \"pi\" or \"e\" seperated by space. ").split()
 
 num = int(num)
